@@ -46,7 +46,7 @@ define(function (require, exports, module) {
 
         toolbarManager.setStatus(toolbarManager.NOT_RUNNING);
         terminalManager.clear();
-        terminalManager.startConnection('http://localhost:' + settings.get('port'));
+        terminalManager.startConnection(settings.get('port'));
 
         $(panel).on('close', function () {
             handleAction();
